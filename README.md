@@ -15,4 +15,4 @@ The implementation of the protocol is very easy from the client's perspective:
 4. You use all the methods of the interface you want. Every time you call a method, the RRPCProxy class will intercept the invocation and instead send a remote execution request to the server, which will execute the method and respond with the result.
 5. You assign the result to a variable and, voilà! You have executed a remote method using RRPC!
 
-![Client implementation](./rrpc_client_implementation.jpg)
+![Client implementation](./rrpc_client_impl.png)
