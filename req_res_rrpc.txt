@@ -1,0 +1,38 @@
+RRPC REQUEST FOR ADDING TWO NUMBERS:
+------------------------
+| req                  |
+| hdl adder.add	       |
+| arg int[1];int[2]    |
+| end                  |
+------------------------
+actual: req hdl adder.add arg int[1];int[2] end
+
+RRPC RESPONSE:
+-----------------
+| res	        |
+| hdl adder.add |
+| arg int[3]    |
+| end           |
+-----------------
+actual: res hdl adder.add arg int[3]
+
+============================
+
+RRPC REQUEST FOR PRINTING OUT SOMETHING:
+-----------------------------
+| req			            |
+| hdl greeter.sayHi         |
+| arg str[Rafael Barbieru]  |
+| end                       |
+-----------------------------
+actual: req hdl greeter.sayHi arg str[Rafael Barbieru]
+
+RRPC RESPONSE:
+------------------------------------
+| res                              |
+| hdl greeter.sayHi                |
+| arg str[Hello Rafael Barbieru!]  |
+| end                              |
+------------------------------------
+actual: res hdl greeter.sayHi arg str[Hello Rafael Barbieru!] end
+
